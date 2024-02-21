@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>欧麦安后台配置系统</title>
+  <link rel="stylesheet" href="layui/css/layui.css" th:href="${layuiCss}">
+  <link rel="stylesheet" href="layui/css/custom.css" th:href="${customCss}">
+  <script src="layui/jquery-3.7.1.js" th:src="${jqueryJs}"></script>
+  <script src="layui/layui.js" th:src="${layuiJs}"></script>
+  <script src="layui/common.js" th:src="${commonJs}"></script>
+  <script src="layui/function.js" th:src="${functionJs}"></script>
+  <script src="layui/css.js" th:src="${cssJs}"></script>
+</head>
+
+<body>
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo layui-hide-xs layui-bg-black">
+        后台配置系统
+        <a style="float:right;margin-right:15px;" id="addPage"><i class="layui-icon">&#xe624;</i></a>
+      </div>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+          <a href="javascript:;">
+            用户名
+          </a>
+          <dl class="layui-nav-child">
+            <dd>
+              <a href="javascript:">
+                <i class="layui-icon layui-icon-logout">
+                </i>
+                退出登录
+              </a>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree">
+          <li class="layui-nav-item">
+            <a href="javascript:" role="main" id="main">首页配置</a>
+          </li>
+
+          <li class="layui-nav-item" th:each="page,pageStat:${pageList}">
+            <a href="javascript:" role="page" th:text="${page.name}" th:id="${page.id}">页面配置</a>
+            <dl class="layui-nav-child" th:each="subPage,stat:${page.subPageList}">
+              <dd><a href="javascript:" role="subPage" th:text="${subPage.name}" th:id="${subPage.id}">子页面配置</a></dd>
+            </dl>
+          </li>
+          <li class="layui-nav-item" id="liAboutUs">
+            <a href="javascript:" role="aboutUs">关于我们</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="layui-body">
+      <!-- 内容主体区域 -->
+      <div id="indexPanel">
+        <img src="file:///Users/vsai/web/resource/login-box-bg.svg" th:src="${imgUrl}" id="indexImg"
+          style="width: 400px;">
+      </div>
+
+      <div id="mainPanel" style="display: none;">
+        <div class="layui-collapse">
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">标题图片</h2>
+            <div class="layui-colla-content layui-show">
+              <div>
+                <img id="title" style="max-width: 100%;" />
+              </div>
+              <button type="button" class="layui-btn" id="uploadTitle">
+                <i class="layui-icon">&#xe67c;</i>上传图片
+              </button>
+            </div>
+          </div>
+          <div class="layui-colla-item">
+            <h2 class="layui-colla-title">轮播图片</h2>
+            <div class="layui-colla-content layui-show">
+              <div class="layui-carousel" id="banner">
+                <div carousel-item style="text-align: center;">
+                </div>
+              </div>
+              <button type="button" class="layui-btn" id="uploadBanner">
+                <i class="layui-icon">&#xe67c;</i>上传图片
+              </button>
+              <button type="button" class="layui-btn" onclick="deleteBanner()">
+                <i class="layui-icon">&#xe640;</i>删除当前图
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layui-row layui-col-space15" style="margin: 10px;display: none" id="pagePanel">
+        <img id="pagePicture" style="max-height: 360px;" />
+        <br />
+        <button type="button" class="layui-btn" id="uploadPagePicture">更换图片</button>
+        <blockquote class="layui-elem-quote" style="margin-top: 30px;">
+          <div id="quote" style="display: inline"></div>
+          <button type="button" class="layui-btn" id="addSubPage" onclick="addSubPage()">添加子页面</button>
+          <button type="button" class="layui-btn" id="addSubPage" onclick="updatePage()"
+            style="margin-right: 10px;">修改名称</button>
+        </blockquote>
+        <table class="layui-table">
+          <colgroup>
+            <col>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>子页面名称</th>
+            </tr>
+          </thead>
+          <tbody id="subPageTable">
+          </tbody>
+        </table>
+      </div>
+
+      <div id="subPagePanel" style="display: none">
+        <textarea id="subPageEditor" style="display: none"></textarea>
+        <button type="button" class="layui-btn">保存</button>
+      </div>
+
+      <div id="aboutUsPanel" style="display: none">
+        关于我们配置
+      </div>
+    </div>
+</body>
+
+</html>

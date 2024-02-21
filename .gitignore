@@ -1,0 +1,9 @@
+# Project exclude paths
+/api/target/
+/background-service/target/
+/data/target/
+/foreground-service/target/
+/main-domain/target/
+/mall-domain/target/
+/order-domain/target/
+/user-domain/target/

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 的值设定为被映射的包名.类名 -->
+<mapper namespace="com.oumaan.data.mapper.UserInfoMapper">
+    <insert id="insertIgnore">
+        insert ignore into user_info (username, password) values
+        (#{entity.username}, #{entity.password})
+    </insert>
+</mapper>

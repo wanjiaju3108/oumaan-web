@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>湖南欧麦安科技集团有限公司</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap-custom.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.js"></script>
+    <!-- 自定义方法 -->
+    <script src="js/css.js"></script>
+    <title>湖南欧麦安科技集团有限公司</title>
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="max-width: 1200px;">
+    <div class="container-fluid">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarTop"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div style="float:right;" class="navbar-text">
+            <a href="index.html" style="text-decoration: none;">中文</a>
+            |
+            <a href="en/index.html" style="text-decoration: none;">English</a>
+            <div class="dropdown" style="display: inline;">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuSearch"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuSearch" style="padding: 0;">
+                    <div class="input-group" id="inputSearch">
+                        <input type="text" class="form-control" placeholder="请输入搜索内容">
+                        <span class="input-group-addon" id="basic-addon2">
+                            <button class="glyphicon glyphicon-search" onclick="javascript:alert('搜索功能暂未开放')"
+                                style="border-color: transparent;"></button>
+                        </span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-header">
+            <div class="navbar-brand" href="javascript:">
+                <img src="resource/title.jpg" draggable="false"
+                    style="max-width: 100%; max-height: 100%;margin-left: 15px;" />
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTop">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="javascript:">首页</a>
+                </li>
+${pageLis}
+                <li>
+                    <a href="javascript:">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="div-center">
+        <div class="div-background">
+            <div id="banner" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+${bannerLis}
+                </ol>
+                <div class="carousel-inner">
+${bannerImgs}
+                </div>
+
+                <a class="carousel-control left" href="#banner" data-slide="prev">
+                    <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" href="#banner" data-slide="next">
+                    <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+            <div class="go-top">
+                <ul class="list-group" style="margin-bottom: 0;">
+                    <li class="list-group-item" id="online">
+                        <span class="glyphicon glyphicon-headphones"></span>
+                        <br />
+                        <span class="glyphicon-class">联系客服</span>
+                    </li>
+                    <li class="list-group-item" id="email">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <br />
+                        <span class="glyphicon-class">发送邮件</span>
+                    <li class="list-group-item" id="wechat">
+                        <span class="glyphicon glyphicon-qrcode"></span>
+                        <br />
+                        <span class="glyphicon-class">加我微信</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <p id="p_diver_1" style="position: absolute;float: left;">
+                    <font color="#337ab7" size="7">Solution</font>
+                    <font color="grey" size="6">/</font>
+                    <font color="grey" size="4">解决方案</font>
+                </p>
+                <div id="div_diver_1" class="div-more">
+                    <a href="www.baidu.com" style="text-decoration: none;">
+                        <font color="#337ab7" size="5">MORE</font>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row div-panel" style="margin-top: 100px;">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail-div">
+                        <a href="javascript:" style="text-decoration: none;" class="thumbnail thumbnail-a">
+                            <div>
+                                <img src="resource/thumbnail1.jpg" alt="..." draggable="false"
+                                    class="thumbnail-img img-responsive center-block" />
+                            </div>
+                            <h4>通信基站雷电防护解决方案</h4>
+                            <hr class="thumbnail-hr">
+                            <div class="thumbnail-div-content">
+                                中光针对通信基站系统天线安装位置高容易受到雷击，设备精密易被浪涌电流损坏等特点，提供了全方位有效的解决方案...
+                            </div>
+                            <div class="thumbnail-bottom">
+                                了解更多 >
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail-div">
+                        <a href="javascript:" style="text-decoration: none;" class="thumbnail thumbnail-a">
+                            <div>
+                                <img src="resource/thumbnail2.jpg" alt="..." draggable="false"
+                                    class="thumbnail-img img-responsive center-block" />
+                            </div>
+                            <h4>光伏雷电防护解决方案</h4>
+                            <hr class="thumbnail-hr">
+                            <div class="thumbnail-div-content">
+                                中光针对光伏系统安装面积较大，容易受到雷击等特点，提供了综合防雷解决方案...
+                            </div>
+                            <div class="thumbnail-bottom">
+                                了解更多 >
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail-div">
+                        <a href="javascript:" style="text-decoration: none;" class="thumbnail thumbnail-a">
+                            <div>
+                                <img src="resource/thumbnail3.jpg" alt="..." draggable="false"
+                                    class="thumbnail-img img-responsive center-block" />
+                            </div>
+                            <h4>风电雷电防护解决方案</h4>
+                            <hr class="thumbnail-hr">
+                            <div class="thumbnail-div-content">
+                                由于风机处于一个暴露的位置，它遭受雷击的概率很高。根据风电防雷的需要，中光提出了综合防雷解决方案...</div>
+                            <div class="thumbnail-bottom">了解更多 ></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail-div">
+                        <a href="javascript:" style="text-decoration: none;" class="thumbnail thumbnail-a">
+                            <div>
+                                <img src="resource/thumbnail4.jpg" alt="..." draggable="false"
+                                    class="thumbnail-img img-responsive center-block" />
+                            </div>
+                            <h4>建筑物综合雷电防护解决方案</h4>
+                            <hr class="thumbnail-hr">
+                            <div class="thumbnail-div-content">
+                                建筑物防雷及安全用电是一个电气安全问题，电气安全关系到用户自身的安全和环境安全，与我们的生活息息相关...
+                            </div>
+                            <div class="thumbnail-bottom">
+                                了解更多 >
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-panel">
+                <a href="product.html">
+                    <img style="width: 100%;z-index: 0;" class="img-show" src="resource/product.jpg" />
+                    <div style="position:absolute;top: 100px;left: 100px;">
+                        <p style="font-size: 18px;color: white;">提供优质服务</p>
+                        <p style="font-size: 32px;color: white;font-weight: bold;">中国防雷领域优秀企业</p>
+                        <span class="btn btn-info">了解更多 ></span>
+                    </div>
+                </a>
+            </div>
+            <div style="margin-top: 30px;">
+                <p id="p_diver_2" style="position: absolute;float: left;">
+                    <font color="337ab7" size="7">About us</font>
+                    <font color="grey" size="6">/</font>
+                    <font color="grey" size="4">公司简介</font>
+                </p>
+                <div id="div_diver_2" class="div-more">
+                    <a href="www.baidu.com" style="text-decoration: none;">
+                        <font color="337ab7" size="5">MORE</font>
+                    </a>
+                </div>
+            </div>
+
+            <div class="panel panel-default" style="margin-top: 100px;">
+                <div class="panel-heading div-center">
+                    <h3 class="panel-title" style="color: white;">防雷设计、防雷施工、接地降阻、防雷技术研发于一体</h3>
+                </div>
+                <div class="panel-body" style="text-align: center;">
+                    <p>湖南欧麦安科技集团有限公司，是一家立足国内、面向全球，以构建电力行业及新型能源安全体系、壮大清洁能源产业、提供能源产业安全保障为使命的新型高科技企业。</p>
+                    <p>目前，集团公司旗下设多家分别以科技、生产、贸易、工程、服务为主体的子公司，分布于国内各省、市、区。项目遍及全国及部分海外地区。集团旗下公司分别在北京、黑龙江、湖南、贵州、新疆、广东、浙江、江西、四川设立了公司、分公司、办事处、工程中心、生产基地、研究中心或营销中心。集团与各级政府相关职能部门、行业协会以及高校开展广泛合作，为电力与能源行业的新课题研究与成果转化提供科学的实践平台。
+                    </p>
+                    <p>欧麦安集团当前在高山复杂环境下的防雷领域技术所取得的成果处于行业领先水平；针对电力系统与新能源行业的雷电在线监测装置及系统、雷电信号采集装置及系统等安全保障技术处于行业先进水平。</p>
+                    <p>欧麦安集团一直以来坚持走科技创新之路，目前已取得包括国家发明专利和国际专利在内的，与电力、能源安全保障相关、具有自主知识产权的环保型新产品和雷电防护装置技术研究成果十余项，科研成果转化率为100%。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="panel panel-primary" style="margin-bottom: 0;">
+        <div class="panel-heading div-center">
+            <img src="resource/contact.png" />
+            <div>集防雷设计、防雷施工、接地降阻、防雷技术研发于一体的高科技企业，<br />在防雷领域，秉持防、治同行的原则，以防雷电隐患为重点。</div>
+        </div>
+        <div class="panel-footer" style="text-align: center;">©2023 湖南欧麦安科技集团有限公司湘ICP备2023013362号-1 技术支持 - 龙采科技集团
+        </div>
+    </div>
+</body>
+<script>
+</script>

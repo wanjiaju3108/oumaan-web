@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+  # 配置mysql数据库连接
+  datasource:
+    name: mysql
+    #数据库链接驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #数据库链接地址
+    url: jdbc:mysql://8.141.93.130:3306/oumaan?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&allowMultiQueries=true&useAffectedRows=true
+    username: oumaan
+    password: worker
+
+html:
+  path: /root/html/
+  resource: http://8.141.93.130/resource/
+  upload-path: /root/html/resource/

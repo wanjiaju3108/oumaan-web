@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>湖南欧麦安科技集团有限公司</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/bootstrap-custom.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="../js/jquery-3.7.1.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="../js/bootstrap.js"></script>
+    <!-- 自定义方法 -->
+    <script src="../js/request.js"></script>
+    <script src="../js/css.js"></script>
+    <script src="../js/page-css.js"></script>
+    <title>湖南欧麦安科技集团有限公司</title>
+</head>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="max-width: 1200px;">
+    <div class="container-fluid">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarTop"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div style="float:right;" class="navbar-text">
+            <a href="index.html" style="text-decoration: none;">中文</a>
+            |
+            <a href="en/index.html" style="text-decoration: none;">English</a>
+            <div class="dropdown" style="display: inline;">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuSearch"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuSearch" style="padding: 0;">
+                    <div class="input-group" id="inputSearch">
+                        <input type="text" class="form-control" placeholder="请输入搜索内容">
+                        <span class="input-group-addon" id="basic-addon2">
+                            <button class="glyphicon glyphicon-search" onclick="javascript:alert('搜索功能暂未开放')"
+                                style="border-color: transparent;"></button>
+                        </span>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-header">
+            <div class="navbar-brand" href="javascript:">
+                <img src="../resource/title.jpg" draggable="false"
+                    style="max-width: 100%; max-height: 100%;margin-left: 15px;" />
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTop">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">首页</a>
+                </li>
+${pageLis}
+                <li>
+                    <a href="javascript:">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <div class="div-center">
+        <div class="div-background">
+            <div class="go-top">
+                <ul class="list-group" style="margin-bottom: 0;">
+                    <li class="list-group-item" id="online">
+                        <span class="glyphicon glyphicon-headphones"></span>
+                        <br />
+                        <span class="glyphicon-class">联系客服</span>
+                    </li>
+                    <li class="list-group-item" id="email">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <br />
+                        <span class="glyphicon-class">发送邮件</span>
+                    <li class="list-group-item" id="wechat">
+                        <span class="glyphicon glyphicon-qrcode"></span>
+                        <br />
+                        <span class="glyphicon-class">加我微信</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="col-md-3">
+                    <ul id="subPageUl" class="nav nav-pills nav-stacked nav-aside nav-warning">
+                    </ul>
+                </div>
+                <div class="col-md-9 sub-page-content-div">
+                    <img id="pageImg" />
+                    <h1 id="subPageName" style="text-align: center;"></h1>
+                    <div id="subPageContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-primary" style="margin-bottom: 0;">
+        <div class="panel-heading div-center">
+            <img src="../resource/contact.png" />
+            <div>集防雷设计、防雷施工、接地降阻、防雷技术研发于一体的高科技企业，<br />在防雷领域，秉持防、治同行的原则，以防雷电隐患为重点。</div>
+        </div>
+        <div class="panel-footer" style="text-align: center;">©2023 湖南欧麦安科技集团有限公司湘ICP备2023013362号-1 技术支持 - 龙采科技集团
+        </div>
+    </div>
+</body>
+<script>
+</script>

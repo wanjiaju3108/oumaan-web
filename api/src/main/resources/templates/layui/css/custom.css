@@ -1,0 +1,52 @@
+.div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.layui-colla-title {
+    background-color: #F2F2F2;
+}
+
+.title-cfg {
+    font-size: 20px;
+}
+
+.layui-logo a {
+    color: white;
+}
+
+.layui-logo a:hover {
+    cursor: pointer;
+}
+
+#subPageTable .layui-btn {
+    position: relative;
+    float: right;
+    display: inline;
+}
+
+.layui-elem-quote .layui-btn {
+    position: relative;
+    float: right;
+    bottom: 8px;
+    display: inline;
+}
+
+.layui-elem-quote p {
+    display: inline;
+}
+
+.layui-body {
+    background-color: #F2F2F2;
+}
+
+.layui-body .layui-table {
+    margin-left: 10px;
+    width: 95%;
+}
+
+.layui-layedit-iframe {
+    background-color: white;
+}
